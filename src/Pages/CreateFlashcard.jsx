@@ -16,6 +16,19 @@ export default function CreateFlashcard() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  const [error, setError] = useState("");
+  const handleSubmit = (e) => {
+  e.preventDefault();
+
+  if (!groupName || !description || flashcards.length === 0) {
+    setError("Please fill in all the fields");
+    return;
+  }
+  
+
+  // Proceed to submit
+  setError(""); // Clear error
+};
   const [fields, setFields] = useState([
     { term: "", definition: "", image: null },
   ]);
@@ -48,7 +61,7 @@ export default function CreateFlashcard() {
             image: field.image ? await fileToBase64(field.image) : null,
           }))
         );
-
+        // Group-level fields
         const data = {
           groupName: values.groupName,
           description: values.description,
@@ -73,17 +86,17 @@ export default function CreateFlashcard() {
       }
     },
   });
-
+// Handle input change for terms
   const handleFieldChange = (index, field, value) => {
     const updated = [...fields];
     updated[index][field] = value;
     setFields(updated);
   };
-
+// Terms list
   const addField = () => {
     setFields([...fields, { term: "", definition: "", image: null }]);
   };
-
+// Handle removing a specific term
   const removeField = (index) => {
     const updated = fields.filter((_, i) => i !== index);
     setFields(updated);
@@ -248,7 +261,8 @@ export default function CreateFlashcard() {
             >
               <FiPlus className="mr-2" /> Add More
             </button>
-
+                
+                {error && <p className="text-red-500 mb-2">{error}</p>}
             <button
               type="submit"
               className="bg-blue-600 text-white font-semibold px-6 py-2 rounded-lg hover:bg-blue-700 transition"
