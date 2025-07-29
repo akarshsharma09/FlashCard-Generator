@@ -1,12 +1,84 @@
-# React + Vite
+# 📚 Flashcard Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application that allows users to create, view, and manage custom flashcards with images, terms, and definitions — built using **React**, **Vite**, **Tailwind CSS**, and **Redux**.
 
-Currently, two official plugins are available:
+------
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+🔗  https://flashcardgenrate.netlify.app/
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+------
+
+## ✨ Features
+
+- 📝 Create flashcards with multiple terms, definitions, and images
+- 🖼️ Upload images for each term
+- 📂 View all created flashcards in a clean card layout
+- 🔍 View flashcard details with image, text, and share/print/download options
+- ♻️ Built with **Redux** to manage global state
+- 💅 Responsive UI built with **Tailwind CSS**
+- ⚡ Super-fast build and development with **Vite**
+
+------
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React, Vite, Tailwind CSS
+- **State Management**: Redux Toolkit
+- **Form Handling**: Formik
+- **Routing**: React Router
+- **Animation**: Framer Motion (optional)
+
+------
+
+## 📷 Screenshots
+
+> Add screenshots of:
+> - Create Flashcard Page
+> - <img width="1920" height="1080" alt="Screenshot (159)" src="https://github.com/user-attachments/assets/1373d203-cdd7-484a-a0ca-0dc2d66e8e83" />
+
+> - My Flashcards Page
+> - <img width="1920" height="1080" alt="Screenshot (157)" src="https://github.com/user-attachments/assets/8d38548c-4887-4342-918f-eb2aede9ff80" />
+
+> - Flashcard Details Page
+> - <img width="1920" height="1080" alt="Screenshot (158)" src="https://github.com/user-attachments/assets/545d4160-d914-41be-be9f-19ae63020268" />
+
+
+------
+
+## 📁 Folder Structure (Optional)
+
+src/
+├── components/
+├── pages/
+├── redux/
+├── assets/
+└── App.jsx
+
+------
+
+## 🧠 Future Scope
+
+    User authentication
+    Cloud database for flashcard storage (e.g., Firebase or MongoDB)
+    Export/import flashcards
+    Mobile app version
+
+------
+
+## 🙌 Contributing
+
+    Pull requests are welcome! Feel free to fork the repo and submit a PR.
+
+------
+
+## 📄 License
+
+    This project is open source under the MIT License.
+
+------
+
+## 👨‍💻 Developed By
+    Akarsh Sharma
+
