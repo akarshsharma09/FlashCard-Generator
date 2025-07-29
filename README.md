@@ -80,5 +80,6 @@ src/
 ------
 
 ## 👨‍💻 Developed By
-    Akarsh Sharma
+       Akarsh Sharma
+   🔗 https://akarshcodes.netlify.app/
 
